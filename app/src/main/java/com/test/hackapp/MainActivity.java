@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void sendMessage() {
         String message = editText.getText().toString();
-        Intent intent = new Intent(this, DisplayActivity.class);
+        Intent intent = new Intent(this, WinActivity.class);
         intent.putExtra(Constants.EXTRA_MESSAGE, message);
         startActivity(intent);
     }
